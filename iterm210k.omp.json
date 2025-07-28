@@ -1,0 +1,92 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+      {
+        "type": "rprompt",
+        "segments": [
+          {
+            "background": "#303030",
+            "foreground": "#82a4a4",
+            "properties": {
+              "time_format": "15:04:05"
+            },
+            "style": "plain",
+            "template": " {{ .CurrentDate | date .Format }} ",
+            "type": "time"
+          }
+        ]
+      },
+      {
+        "alignment": "left",
+        "horizontal_offset": 0,
+        "vertical_offset": 0,
+        "segments": [
+          {
+            "background": "#303030",
+            "foreground": "#eeeeee",
+            "powerline_symbol": "",
+            "leading_diamond": "\uE0BA",
+            "trailing_diamond": "",
+            "properties": {
+              "alpine": "\uF300",
+              "arch": "\uF303",
+              "centos": "\uF304",
+              "debian": "\uF306",
+              "elementary": "\uF309",
+              "fedora": "\uF30A",
+              "gentoo": "\uF30D",
+              "linux": "\uE712",
+              "macos": "\uE711",
+              "manjaro": "\uF312",
+              "mint": "\uF30F",
+              "opensuse": "\uF314",
+              "postfix": "\u003c#ffffff\u003e ╱\u003c/\u003e",
+              "raspbian": "\uF315",
+              "ubuntu": "\uF31C",
+              "windows": "\uE70F",
+              "wsl": "\uE712",
+              "wsl_separator": " on "
+            },
+            "style": "powerline",
+            "template": " {{ .Icon }} |",
+            "type": "os"
+          },
+          {
+            "background": "#404040",
+            "foreground": "#45accb",
+            "powerline_symbol": "\ue0b0",
+            "properties": {
+              "folder_separator_icon": "/",
+              "style": "folder"
+            },
+            "style": "powerline",
+            "template": "\ue5ff {{ .Parent }}",
+            "type": "path"
+          },
+          {
+            "background": "#404040",
+            "foreground": "#00afff",
+            
+            "properties": {
+              "enable_hyperlink": true,
+              "style": "folder"
+            },
+            "style": "powerline",
+            "template": " \u003cb\u003e{{ .Folder }}\u003c/b\u003e ",
+            "type": "path"
+          },
+          {
+            "background": "#404040",
+            "foreground": "#62e100",
+            "powerline_symbol": "\ue0b0",
+            "style": "powerline",
+            "template": "{{ .HEAD }} ",
+            "type": "git"
+          }
+        ],
+        "type": "prompt"
+      }
+    ],
+    "final_space": true,
+    "version": 3
+  }
