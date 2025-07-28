@@ -102,7 +102,7 @@ The theme is highly customizable. You can modify the `iterm210k.omp.json` file t
 
 ```
 posh-theme/
-├── iterm210k.omp.json    # Main theme configuration
+├── iterm2p10k.omp.json    # Main theme configuration
 └── README.md             # This file
 ```
 
